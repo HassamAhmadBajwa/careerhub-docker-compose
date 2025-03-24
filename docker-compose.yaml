@@ -15,7 +15,7 @@ services:
       - mern-app
 
   backend:
-    image: hassamahmad/careerhub-backend:BACKEND_IMAGENAME
+    image: hassamahmad/careerhub-backend:BACKEND_IMAGETAG
     container_name: careerhub-backend
     restart: always
     env_file: ../backend/.env
@@ -30,7 +30,7 @@ services:
       - mongo
 
   careerhub:
-    image: hassamahmad/careerhub-frontend:FRONTEND_IMAGENAME
+    image: hassamahmad/careerhub-frontend:FRONTEND_IMAGETAG
     container_name: careerhub-frontend
     restart: always
     volumes:
